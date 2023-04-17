@@ -63,50 +63,59 @@
     <!-- Page Title -->
     <title>GiftstormingAi</title>
   </head>
-  <body>
-    <div class="absolute right-4 top-4 flex gap-2">
-      <div>
-        <button
-          id="langDropdownButton"
-          type="button"
-          class="rounded-lg bg-stone-50 p-2 text-2xl leading-[0] transition-colors hover:text-indigo-500 dark:bg-zinc-900"
+  <body
+    class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100"
+  >
+    <header class="lg:px flex items-center justify-between px-4 py-4 lg:px-8">
+      <span>
+        <a href="/" class="text-2xl font-bold text-red-600 dark:text-red-400"
+          >GiftstormingAi</a
         >
-          <span class="fa-solid fa-globe"></span>
-        </button>
-        <div
-          id="langDropdown"
-          class="absolute z-10 hidden rounded-lg bg-stone-50 text-2xl dark:bg-zinc-900"
-        >
-          <ul class="m-0 p-0">
-            <li
-              class="cursor-pointer list-none p-1 transition-colors hover:text-indigo-500"
-            >
-              EN
-            </li>
-            <li
-              class="cursor-pointer list-none p-1 transition-colors hover:text-indigo-500"
-            >
-              ES
-            </li>
-          </ul>
+      </span>
+      <div class="flex gap-2">
+        <label for="themeSwitch" class="group inline-flex cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            id="themeSwitch"
+            class="sr-only"
+            checked
+          />
+          <span
+            class="w-10 rounded-lg bg-neutral-200 p-2 text-center text-2xl leading-[0] dark:bg-neutral-900"
+          >
+            <span class="fa-solid fa-sun hover:text-yellow-500"></span>
+            <span class="fa-solid fa-moon hidden hover:text-yellow-100"></span>
+          </span>
+        </label>
+        <div>
+          <button
+            id="langDropdownButton"
+            type="button"
+            class="rounded-lg bg-neutral-200 p-2 text-2xl leading-[0] hover:text-sky-400 dark:bg-neutral-900"
+          >
+            <span class="fa-solid fa-globe"></span>
+          </button>
+          <div
+            id="langDropdown"
+            class="absolute z-10 mt-2 hidden rounded-lg bg-neutral-200 text-2xl dark:bg-neutral-900"
+          >
+            <ul>
+              <li
+                class="cursor-pointer list-none p-1 transition-colors hover:text-sky-400"
+              >
+                EN
+              </li>
+              <li
+                class="cursor-pointer list-none p-1 transition-colors hover:text-sky-400"
+              >
+                ES
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <label for="themeSwitch" class="inline-flex cursor-pointer">
-        <input
-          type="checkbox"
-          value=""
-          id="themeSwitch"
-          class="sr-only"
-          checked
-        />
-        <span
-          class="peer rounded-lg bg-stone-50 p-2 text-2xl leading-[0] transition-colors hover:text-indigo-500 dark:bg-zinc-900"
-        >
-          <span class="fa-solid fa-sun"></span>
-          <span class="fa-solid fa-moon hidden"></span>
-        </span>
-      </label>
-    </div>
+    </header>
 
     <!-- Scripts -->
     <script defer type="module" src="./scripts/index.js"></script>
