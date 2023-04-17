@@ -1,5 +1,3 @@
 {
-  "vite": "Hello Vite!",
-  "vite_learn_more": "Click on the Vite logo to learn more",
-  "counter": "count is {{count}}"
+  "helloWorld": "Hello world"
 }

@@ -1,5 +1,3 @@
 {
-  "vite": "Hola Vite!",
-  "vite_learn_more": "Haz click en el logo de Vite para obtener más información",
-  "counter": "el conteo es {{count}}"
+  "helloWorld": "Hola mundo"
 }
