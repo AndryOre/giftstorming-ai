@@ -1,0 +1,32 @@
+{
+  "name": "giftstorming-ai",
+  "description": "Unleash a storm of personalized gift ideas, powered by AI. Find the perfect present for your loved ones in a breeze.",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "i18next": "^22.4.14",
+    "i18next-browser-languagedetector": "^7.0.1"
+  }
+}

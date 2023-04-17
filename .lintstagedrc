@@ -1,0 +1,4 @@
+{
+	"*.html": "prettier",
+	"./src/scripts/*.js": ["eslint" , "prettier"]
+}
