@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "host": "vite --host --port 5500",
     "build": "vite build",
     "preview": "vite preview"
   },
