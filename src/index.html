@@ -116,7 +116,386 @@
         </div>
       </div>
     </header>
+    <main class="flex flex-col gap-16 px-4 py-4 lg:px-8">
+      <form class="flex flex-col gap-8">
+        <fieldset class="flex flex-wrap gap-4">
+          <legend class="mb-4 text-2xl font-bold">
+            What is the special occasion?
+          </legend>
+          <label for="birthday"
+            ><input
+              type="radio"
+              name="occasion"
+              id="birthday"
+              class="peer sr-only"
+              value="birthday"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Birthday</span>
+              <img src="/assets/images/birthday.png" class="h-16 w-16" />
+            </div>
+          </label>
 
+          <label for="anniversary">
+            <input
+              type="radio"
+              name="occasion"
+              id="anniversary"
+              class="peer sr-only"
+              value="anniversary"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Anniversary</span>
+              <img src="/assets/images/anniversary.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="graduation">
+            <input
+              type="radio"
+              name="occasion"
+              id="graduation"
+              class="peer sr-only"
+              value="graduation"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Graduation</span>
+              <img src="/assets/images/graduation.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="christmas">
+            <input
+              type="radio"
+              name="occasion"
+              id="christmas"
+              class="peer sr-only"
+              value="christmas"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Christmas</span>
+              <img src="/assets/images/christmas.png" class="h-16 w-16" />
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="flex flex-wrap gap-4">
+          <legend class="mb-4 text-2xl font-bold">
+            What is your relationship with the person who will receive the gift?
+          </legend>
+          <label for="friend"
+            ><input
+              type="radio"
+              name="relantionship"
+              id="friend"
+              class="peer sr-only"
+              value="friend"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Friend</span>
+              <img src="/assets/images/friend.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="couple">
+            <input
+              type="radio"
+              name="relantionship"
+              id="couple"
+              class="peer sr-only"
+              value="couple"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Couple</span>
+              <img src="/assets/images/couple.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="family">
+            <input
+              type="radio"
+              name="relantionship"
+              id="family"
+              class="peer sr-only"
+              value="family"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Family</span>
+              <img src="/assets/images/family.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="coworker">
+            <input
+              type="radio"
+              name="relantionship"
+              id="coworker"
+              class="peer sr-only"
+              value="coworker"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Coworker</span>
+              <img src="/assets/images/coworker.png" class="h-16 w-16" />
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="flex flex-col">
+          <legend class="mb-4 text-2xl font-bold">
+            What age range is the person in?
+          </legend>
+          <label for="child"
+            ><input
+              type="radio"
+              name="age"
+              id="child"
+              class="peer sr-only"
+              value="child (0 - 12)"
+            />
+            <div
+              class="cursor-pointer rounded-t-lg bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Child (0 - 12)</span>
+            </div>
+          </label>
+
+          <label for="teenager"
+            ><input
+              type="radio"
+              name="age"
+              id="teenager"
+              class="peer sr-only"
+              value="teenager (13 - 17)"
+            />
+            <div
+              class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Teenager (13 - 17)</span>
+            </div>
+          </label>
+
+          <label for="youngAdult"
+            ><input
+              type="radio"
+              name="age"
+              id="youngAdult"
+              class="peer sr-only"
+              value="young adult (18 - 24)"
+            />
+            <div
+              class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Young Adult (18 - 24)</span>
+            </div>
+          </label>
+
+          <label for="youngProfessional"
+            ><input
+              type="radio"
+              name="age"
+              id="youngProfessional"
+              class="peer sr-only"
+              value="young professional (25 - 34)"
+            />
+            <div
+              class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Young Professional (25 - 34)</span>
+            </div>
+          </label>
+
+          <label for="middle"
+            ><input
+              type="radio"
+              name="age"
+              id="middle"
+              class="peer sr-only"
+              value="niddle - aged adult (35 - 49)"
+            />
+            <div
+              class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Middle - aged Adult (35 - 49)</span>
+            </div>
+          </label>
+
+          <label for="olderAdult"
+            ><input
+              type="radio"
+              name="age"
+              id="olderAdult"
+              class="peer sr-only"
+              value="older adult (50 - 64)"
+            />
+            <div
+              class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Older Adult (50 - 64)</span>
+            </div>
+          </label>
+
+          <label for="senior">
+            <input
+              type="radio"
+              name="age"
+              id="senior"
+              class="peer sr-only"
+              value="senior (65+)"
+            />
+            <div
+              class="cursor-pointer rounded-b-lg bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
+            >
+              <span>Senior (65+)</span>
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="flex flex-wrap gap-4">
+          <legend class="mb-4 text-2xl font-bold">
+            What is the person's gender?
+          </legend>
+          <label for="male"
+            ><input
+              type="radio"
+              name="gender"
+              id="male"
+              class="peer sr-only"
+              value="male"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Male</span>
+              <img src="/assets/images/male.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="female">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              class="peer sr-only"
+              value="female"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Female</span>
+              <img src="/assets/images/female.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="non-binary">
+            <input
+              type="radio"
+              name="gender"
+              id="non-binary"
+              class="peer sr-only"
+              value="non-binary"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Non Binary</span>
+              <img src="/assets/images/non-binary.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="not-relevant">
+            <input
+              type="radio"
+              name="gender"
+              id="not-relevant"
+              class="peer sr-only"
+              value="not-relevant"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Not Relevant</span>
+              <img src="/assets/images/not-relevant.png" class="h-16 w-16" />
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="flex flex-wrap gap-4">
+          <legend class="mb-4 text-2xl font-bold">
+            What kind of gift are you looking for?
+          </legend>
+          <label for="physical"
+            ><input
+              type="radio"
+              name="type"
+              id="physical"
+              class="peer sr-only"
+              value="physical"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Physical</span>
+              <img src="/assets/images/physical.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="digital">
+            <input
+              type="radio"
+              name="type"
+              id="digital"
+              class="peer sr-only"
+              value="digital"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Digital</span>
+              <img src="/assets/images/digital.png" class="h-16 w-16" />
+            </div>
+          </label>
+
+          <label for="experience">
+            <input
+              type="radio"
+              name="type"
+              id="experience"
+              class="peer sr-only"
+              value="experience"
+            />
+            <div
+              class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
+            >
+              <span>Experience</span>
+              <img src="/assets/images/experience.png" class="h-16 w-16" />
+            </div>
+          </label>
+        </fieldset>
+        <button
+          type="submit"
+          value="Submit"
+          class="rounded-lg bg-red-600 px-5 py-2.5 font-bold text-neutral-100 hover:bg-red-400 focus:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:focus:bg-red-600"
+        >
+          Get suggestions ✨
+        </button>
+      </form>
+    </main>
     <footer
       class="p flex flex-col items-center justify-between gap-4 px-4 py-4 lg:flex-row lg:px-8"
     >
