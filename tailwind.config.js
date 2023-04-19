@@ -7,7 +7,14 @@ export default {
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      width: {
+        34: "8.5rem",
+      },
+      height: {
+        34: "8.5rem",
+      },
+    },
   },
   plugins: [],
 };
