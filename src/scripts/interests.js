@@ -31,4 +31,4 @@ interestsInput.addEventListener("keypress", addInterest);
 
 interestList.addEventListener("click", removeInterest);
 
-export { addInterest, removeInterest };
+export { addInterest, removeInterest, interests };
