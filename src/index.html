@@ -127,9 +127,7 @@
     <main class="flex flex-col gap-16 px-4 py-4 lg:px-8">
       <form method="POST" id="giftForm" class="flex flex-col gap-8">
         <fieldset class="flex flex-wrap gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What is the special occasion?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="occasion"></legend>
           <label for="birthday"
             ><input
               type="radio"
@@ -141,7 +139,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Birthday</span>
+              <span data-i18n="birthday"></span>
               <img src="/assets/images/birthday.png" class="h-16 w-16" />
             </div>
           </label>
@@ -157,7 +155,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Anniversary</span>
+              <span data-i18n="anniversary"></span>
               <img src="/assets/images/anniversary.png" class="h-16 w-16" />
             </div>
           </label>
@@ -173,7 +171,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Graduation</span>
+              <span data-i18n="graduation"></span>
               <img src="/assets/images/graduation.png" class="h-16 w-16" />
             </div>
           </label>
@@ -189,16 +187,17 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Christmas</span>
+              <span data-i18n="christmas"></span>
               <img src="/assets/images/christmas.png" class="h-16 w-16" />
             </div>
           </label>
         </fieldset>
 
         <fieldset class="flex flex-wrap gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What is your relationship with the person who will receive the gift?
-          </legend>
+          <legend
+            class="mb-4 text-2xl font-bold"
+            data-i18n="relationship"
+          ></legend>
           <label for="friend"
             ><input
               type="radio"
@@ -210,7 +209,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Friend</span>
+              <span data-i18n="friend"></span>
               <img src="/assets/images/friend.png" class="h-16 w-16" />
             </div>
           </label>
@@ -226,7 +225,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Couple</span>
+              <span data-i18n="couple"></span>
               <img src="/assets/images/couple.png" class="h-16 w-16" />
             </div>
           </label>
@@ -242,7 +241,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Family</span>
+              <span data-i18n="family"></span>
               <img src="/assets/images/family.png" class="h-16 w-16" />
             </div>
           </label>
@@ -258,16 +257,14 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Coworker</span>
+              <span data-i18n="coworker"></span>
               <img src="/assets/images/coworker.png" class="h-16 w-16" />
             </div>
           </label>
         </fieldset>
 
         <fieldset class="flex flex-col">
-          <legend class="mb-4 text-2xl font-bold">
-            What age range is the person in?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="age"></legend>
           <label for="child"
             ><input
               type="radio"
@@ -279,7 +276,7 @@
             <div
               class="cursor-pointer rounded-t-lg bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Child (0 - 12)</span>
+              <span data-i18n="child"></span>
             </div>
           </label>
 
@@ -294,7 +291,7 @@
             <div
               class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Teenager (13 - 17)</span>
+              <span data-i18n="teenager"></span>
             </div>
           </label>
 
@@ -309,7 +306,7 @@
             <div
               class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Young Adult (18 - 24)</span>
+              <span data-i18n="youngAdult"></span>
             </div>
           </label>
 
@@ -324,7 +321,7 @@
             <div
               class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Young Professional (25 - 34)</span>
+              <span data-i18n="youngProfessional"></span>
             </div>
           </label>
 
@@ -334,12 +331,12 @@
               name="age"
               id="middle"
               class="peer sr-only"
-              value="niddle - aged adult (35 - 49)"
+              value="middle - aged adult (35 - 49)"
             />
             <div
               class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Middle - aged Adult (35 - 49)</span>
+              <span data-i18n="middle-agedAdult"></span>
             </div>
           </label>
 
@@ -354,7 +351,7 @@
             <div
               class="cursor-pointer bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Older Adult (50 - 64)</span>
+              <span data-i18n="olderAdult"></span>
             </div>
           </label>
 
@@ -369,15 +366,13 @@
             <div
               class="cursor-pointer rounded-b-lg bg-red-600 px-3 py-1.5 font-semibold text-neutral-100 hover:bg-red-400 peer-checked:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:peer-checked:bg-red-600"
             >
-              <span>Senior (65+)</span>
+              <span data-i18n="senior"></span>
             </div>
           </label>
         </fieldset>
 
         <fieldset class="flex flex-wrap gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What is the person's gender?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="gender"></legend>
           <label for="male"
             ><input
               type="radio"
@@ -389,7 +384,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Male</span>
+              <span data-i18n="male"></span>
               <img src="/assets/images/male.png" class="h-16 w-16" />
             </div>
           </label>
@@ -405,7 +400,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Female</span>
+              <span data-i18n="female"></span>
               <img src="/assets/images/female.png" class="h-16 w-16" />
             </div>
           </label>
@@ -421,7 +416,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Non Binary</span>
+              <span data-i18n="nonBinary"></span>
               <img src="/assets/images/non-binary.png" class="h-16 w-16" />
             </div>
           </label>
@@ -437,30 +432,26 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Not Relevant</span>
+              <span data-i18n="notRelevant"></span>
               <img src="/assets/images/not-relevant.png" class="h-16 w-16" />
             </div>
           </label>
         </fieldset>
 
         <fieldset class="flex flex-col gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What are the interests of the person who will receive the gift?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="interest"></legend>
           <input
             type="text"
             name="interests"
             id="interestsInput"
             class="w-full rounded-lg bg-neutral-200 px-2 py-1.5 capitalize text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-600 dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:ring-red-400"
-            placeholder="Ex. Music"
+            placeholder="e.g. Music"
           />
           <div id="interestList" class="flex flex-wrap gap-2"></div>
         </fieldset>
 
         <fieldset class="flex flex-wrap gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What kind of gift are you looking for?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="type"></legend>
           <label for="physical"
             ><input
               type="radio"
@@ -472,7 +463,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Physical</span>
+              <span data-i18n="physical"></span>
               <img src="/assets/images/physical.png" class="h-16 w-16" />
             </div>
           </label>
@@ -488,7 +479,7 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Digital</span>
+              <span data-i18n="digital"></span>
               <img src="/assets/images/digital.png" class="h-16 w-16" />
             </div>
           </label>
@@ -504,16 +495,14 @@
             <div
               class="flex h-34 w-34 cursor-pointer flex-col gap-2 rounded-lg border-2 border-transparent bg-neutral-200 p-4 font-bold hover:border-red-600 hover:bg-zinc-200 peer-checked:border-red-500 peer-checked:bg-zinc-200 dark:bg-neutral-900 dark:hover:border-red-400 dark:hover:bg-zinc-900 dark:peer-checked:border-red-400 dark:peer-checked:bg-zinc-900"
             >
-              <span>Experience</span>
+              <span data-i18n="experience"></span>
               <img src="/assets/images/experience.png" class="h-16 w-16" />
             </div>
           </label>
         </fieldset>
 
         <fieldset class="flex flex-wrap gap-4">
-          <legend class="mb-4 text-2xl font-bold">
-            What is your gift budget?
-          </legend>
+          <legend class="mb-4 text-2xl font-bold" data-i18n="budget"></legend>
           <div class="flex w-full gap-4">
             <input
               type="number"
@@ -537,16 +526,15 @@
         <button
           type="submit"
           class="rounded-lg bg-red-600 px-5 py-2.5 font-bold text-neutral-100 hover:bg-red-400 focus:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:focus:bg-red-600"
-        >
-          Get suggestions ✨
-        </button>
+          data-i18n="suggestions"
+        ></button>
       </form>
     </main>
     <footer
       class="p flex flex-col items-center justify-between gap-4 px-4 py-4 lg:flex-row lg:px-8"
     >
-      <p class="font-semibold hover:text-white">
-        Made by
+      <p class="font-semibold">
+        <span data-i18n="madeBy"></span>
         <a
           href="https://twitter.com/AndryOre"
           class="hover:text-red-600 hover:underline hover:dark:text-red-400"
