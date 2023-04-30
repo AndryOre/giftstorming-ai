@@ -9,9 +9,6 @@ maxPrice.addEventListener("change", () => {
   minPrice.max = maxPrice.value;
 });
 
-function budgetRange() {
-  const budget = `from ${minPrice.value} to ${maxPrice.value}`;
-  return budget;
-}
+const budgetRange = () => `from ${minPrice.value} to ${maxPrice.value}`;
 
-export { minPrice, maxPrice, budgetRange };
+export { budgetRange };
