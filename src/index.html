@@ -117,7 +117,7 @@
       </div>
     </header>
     <main class="flex flex-col gap-16 px-4 py-4 lg:px-8">
-      <form class="flex flex-col gap-8">
+      <form id="giftForm" class="flex flex-col gap-8">
         <fieldset class="flex flex-wrap gap-4">
           <legend class="mb-4 text-2xl font-bold">
             What is the special occasion?
@@ -194,7 +194,7 @@
           <label for="friend"
             ><input
               type="radio"
-              name="relantionship"
+              name="relationship"
               id="friend"
               class="peer sr-only"
               value="friend"
@@ -210,7 +210,7 @@
           <label for="couple">
             <input
               type="radio"
-              name="relantionship"
+              name="relationship"
               id="couple"
               class="peer sr-only"
               value="couple"
@@ -226,7 +226,7 @@
           <label for="family">
             <input
               type="radio"
-              name="relantionship"
+              name="relationship"
               id="family"
               class="peer sr-only"
               value="family"
@@ -242,7 +242,7 @@
           <label for="coworker">
             <input
               type="radio"
-              name="relantionship"
+              name="relationship"
               id="coworker"
               class="peer sr-only"
               value="coworker"
@@ -441,6 +441,7 @@
           </legend>
           <input
             type="text"
+            name="interests"
             id="interestsInput"
             class="w-full rounded-lg bg-neutral-200 px-2 py-1.5 capitalize text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-600 dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:ring-red-400"
             placeholder="Ex. Music"
@@ -508,6 +509,7 @@
           <div class="flex w-full gap-4">
             <input
               type="number"
+              name="budget"
               id="min"
               min="1"
               class="w-full rounded-lg bg-neutral-200 px-2 py-1.5 text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-600 dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:ring-red-400"
@@ -515,6 +517,7 @@
             />
             <input
               type="number"
+              name="budget"
               id="max"
               min="1"
               class="w-full rounded-lg bg-neutral-200 px-2 py-1.5 text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-600 dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:ring-red-400"
@@ -525,7 +528,6 @@
 
         <button
           type="submit"
-          value="Submit"
           class="rounded-lg bg-red-600 px-5 py-2.5 font-bold text-neutral-100 hover:bg-red-400 focus:bg-red-400 dark:bg-red-400 dark:hover:bg-red-600 dark:focus:bg-red-600"
         >
           Get suggestions ✨

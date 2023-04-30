@@ -13,7 +13,6 @@ function addInterest(e) {
     interestList.appendChild(interest);
     interestsInput.value = "";
   }
-  console.log(interests);
 }
 
 function removeInterest(e) {
