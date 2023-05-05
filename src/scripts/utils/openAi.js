@@ -1,5 +1,6 @@
 const params = {
-  model: "text-davinci-002",
+  model: "text-davinci-003",
+  max_tokens: 256,
   prompt: "",
 };
 
@@ -16,7 +17,7 @@ async function openAi(prompt) {
     }),
   });
   const data = await response.json();
-  return data.choices[0].text.trim();
+  return data;
 }
 
 export { openAi };
