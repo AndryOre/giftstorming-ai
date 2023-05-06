@@ -1,5 +1,6 @@
 import { budgetRange } from "./budget.js";
 import { interests } from "./interests.js";
+import { showLoader } from "./loader.js";
 import { getGiftIdeas } from "./giftIdeas.js";
 
 const giftData = {};
@@ -12,7 +13,7 @@ function formHandler(e) {
   giftFormData.forEach((value, key) => (giftData[key] = value));
   giftData.interests = interests.toString();
   giftData.budget = budgetRange();
-
+  showLoader();
   getGiftIdeas();
 }
 
