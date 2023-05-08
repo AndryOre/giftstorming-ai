@@ -1,8 +1,14 @@
 import i18next from "i18next";
 
-export function updateTranslations() {
+function updateTranslations() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
     element.textContent = i18next.t(key);
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-placeholder");
+    element.placeholder = i18next.t(key);
+  });
 }
+
+export { updateTranslations };
