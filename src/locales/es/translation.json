@@ -34,5 +34,6 @@
   "suggestions": "Obtener sugerencias ✨",
   "madeBy": "Hecho por",
   "interestsAlert": "Por favor, ingrese al menos un interés para continuar.",
-  "budgetRange": "de {{minPrice}} a {{maxPrice}}"
+  "budgetRange": "de {{minPrice}} a {{maxPrice}}",
+  "priceRange": "Rango de precio: "
 }

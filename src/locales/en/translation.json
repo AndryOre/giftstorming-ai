@@ -34,5 +34,6 @@
   "suggestions": "Get suggestions ✨",
   "madeBy": "Made by",
   "interestsAlert": "Please enter at least one interest to continue",
-  "budgetRange": "from {{minPrice}} to {{maxPrice}}"
+  "budgetRange": "from {{minPrice}} to {{maxPrice}}",
+  "priceRange": "Price range: "
 }
