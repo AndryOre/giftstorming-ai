@@ -5,13 +5,16 @@ const interests = [];
 function addInterest(e) {
   if (e.key === "Enter") {
     e.preventDefault();
-    interests.push(interestsInput.value);
-    const interest = document.createElement("div");
-    interest.className =
-      "capitalize flex w-fit items-center justify-between gap-2 rounded-lg bg-red-600 px-2 py-1 text-sm font-semibold text-neutral-100 dark:bg-red-400";
-    interest.innerHTML = `<span>${interestsInput.value}</span> <span id="removeInterest" class="fa-solid fa-xmark text-red-400 dark:text-red-600 cursor-pointer"></span>`;
-    interestList.appendChild(interest);
-    interestsInput.value = "";
+    const inputText = interestsInput.value.trim();
+    if (inputText !== "") {
+      interests.push(inputText);
+      const interest = document.createElement("div");
+      interest.className =
+        "capitalize flex w-fit items-center justify-between gap-2 rounded-lg bg-red-600 px-2 py-1 text-sm font-semibold text-neutral-100 dark:bg-red-400";
+      interest.innerHTML = `<span>${interestsInput.value}</span> <span id="removeInterest" class="fa-solid fa-xmark text-red-400 dark:text-red-600 cursor-pointer"></span>`;
+      interestList.appendChild(interest);
+      interestsInput.value = "";
+    }
   }
 }
 
