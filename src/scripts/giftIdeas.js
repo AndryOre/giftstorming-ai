@@ -14,7 +14,6 @@ Example:
 
   const giftIdeasData = await openAi(prompt);
   const giftString = giftIdeasData.choices[0].text;
-  console.log("giftString", giftString);
   const giftIdeas = giftString
     .split("\n")
     .map((idea) => idea.trim())
@@ -27,7 +26,6 @@ Example:
         price_range: parts[2].split(":")[1].trim(),
       };
     });
-  console.log("giftIdeas", giftIdeas);
   showGiftIdeas(giftIdeas);
 }
 
