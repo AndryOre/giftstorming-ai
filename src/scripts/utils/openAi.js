@@ -1,6 +1,6 @@
 const params = {
   model: "text-davinci-003",
-  max_tokens: 256,
+  max_tokens: 512,
   prompt: "",
 };
 
