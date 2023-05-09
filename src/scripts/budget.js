@@ -11,8 +11,6 @@ maxPrice.addEventListener("change", () => {
   minPrice.max = maxPrice.value;
 });
 
-//const budgetRange = () => `from ${minPrice.value} to ${maxPrice.value}`;
-
 const budgetRange = () =>
   i18next.t("budgetRange", {
     minPrice: minPrice.value,
