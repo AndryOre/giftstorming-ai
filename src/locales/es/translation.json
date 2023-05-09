@@ -32,5 +32,6 @@
   "minPrice": "Precio mínimo",
   "maxPrice": "Precio máximo",
   "suggestions": "Obtener sugerencias ✨",
-  "madeBy": "Hecho por"
+  "madeBy": "Hecho por",
+  "interestsAlert": "Por favor, ingrese al menos un interés para continuar."
 }
