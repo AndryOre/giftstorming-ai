@@ -9,6 +9,10 @@ function updateTranslations() {
     const key = element.getAttribute("data-i18n-placeholder");
     element.placeholder = i18next.t(key);
   });
+  document.querySelectorAll("[data-i18n-value]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-value");
+    element.value = i18next.t(key);
+  });
 }
 
 export { updateTranslations };
