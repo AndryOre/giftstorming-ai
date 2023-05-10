@@ -28,11 +28,11 @@ function addInterest(e) {
       interest.innerHTML = `<span>${interestsInput.value}</span> <span id="removeInterest" class="fa-solid fa-xmark text-red-400 dark:text-red-600 cursor-pointer"></span>`;
       interestList.appendChild(interest);
       interestsInput.value = "";
+      interestCounter--;
+      interestRemaining.textContent = i18next.t("interestRemaining", {
+        count: interestCounter,
+      });
     }
-    interestCounter--;
-    interestRemaining.textContent = i18next.t("interestRemaining", {
-      count: interestCounter,
-    });
   }
 }
 
