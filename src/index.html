@@ -444,6 +444,7 @@
 
         <fieldset class="flex flex-col gap-4">
           <legend class="mb-4 text-2xl font-bold" data-i18n="interest"></legend>
+          <span data-i18n="interestTip"></span>
           <input
             type="text"
             name="interests"
@@ -451,6 +452,8 @@
             class="w-full rounded-lg bg-neutral-200 px-2 py-1.5 capitalize text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-600 dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:ring-red-400"
             data-i18n-placeholder="interesteg"
           />
+          <small id="interestRemaining"></small>
+
           <div id="interestList" class="flex flex-wrap gap-2"></div>
         </fieldset>
 

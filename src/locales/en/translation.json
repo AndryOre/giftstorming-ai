@@ -23,6 +23,8 @@
   "nonBinary": "Non-binary",
   "notRelevant": "Not relevant",
   "interest": "What are the interests of the person who will receive the gift?",
+  "interestTip": "Press enter or add a comma after each interest",
+  "interestRemaining": "{{count}} of 10 interests added",
   "interesteg": "e.g. Music",
   "type": "What kind of gift are you looking for?",
   "physical": "Physical",

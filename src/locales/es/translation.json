@@ -23,6 +23,8 @@
   "nonBinary": "No binario/a",
   "notRelevant": "No relevante",
   "interest": "¿Cuáles son los intereses de la persona que recibirá el regalo?",
+  "interestTip": "Presiona Enter o agrega una coma después de cada interés",
+  "interestRemaining": "{{count}} de 10 intereses agregados",
   "interesteg": "p.ej. Música",
   "type": "¿Qué tipo de regalo estás buscando?",
   "physical": "Físico",

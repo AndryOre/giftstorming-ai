@@ -1,6 +1,20 @@
+import i18next from "i18next";
+
 const interestsInput = document.querySelector("#interestsInput");
 const interestList = document.querySelector("#interestList");
+const interestRemaining = document.querySelector("#interestRemaining");
 const interests = [];
+let interestCounter = 10;
+
+function interestCount() {
+  interestRemaining.textContent = i18next.t("interestRemaining", {
+    count: interestCounter,
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  interestCount();
+});
 
 function addInterest(e) {
   if (e.key === "Enter") {
@@ -15,6 +29,10 @@ function addInterest(e) {
       interestList.appendChild(interest);
       interestsInput.value = "";
     }
+    interestCounter--;
+    interestRemaining.textContent = i18next.t("interestRemaining", {
+      count: interestCounter,
+    });
   }
 }
 
@@ -27,6 +45,10 @@ function removeInterest(e) {
       interests.splice(removedIndex, 1);
     }
     removedInterestDiv.remove();
+    interestCounter++;
+    interestRemaining.textContent = i18next.t("interestRemaining", {
+      count: interestCounter,
+    });
   }
 }
 
