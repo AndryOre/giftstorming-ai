@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function addInterest(e) {
-  if (e.key === "Enter") {
+  if (e.key === "Enter" || e.key === ",") {
     e.preventDefault();
     const inputText = interestsInput.value.trim();
     if (inputText !== "") {
