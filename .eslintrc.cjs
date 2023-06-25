@@ -1,4 +1,4 @@
-export const config = {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
@@ -11,5 +11,10 @@ export const config = {
   plugins: ["prettier"],
   rules: {
     "prettier/prettier": ["error"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["**/*.config.js"] },
+    ],
+    "no-param-reassign": ["error", { props: false }],
   },
 };
