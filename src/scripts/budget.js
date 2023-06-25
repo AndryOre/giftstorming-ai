@@ -17,4 +17,4 @@ const budgetRange = () =>
     maxPrice: maxPrice.value,
   });
 
-export { budgetRange };
+export default budgetRange;

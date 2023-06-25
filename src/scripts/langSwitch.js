@@ -1,5 +1,5 @@
 import i18next from "./i18n";
-import { updateTranslations } from "./utils/translations";
+import updateTranslations from "./utils/translations";
 
 const langDropdown = document.getElementById("langDropdown");
 const langDropdownButton = document.getElementById("langDropdownButton");
@@ -64,4 +64,4 @@ const initLangSwitch = () => {
   });
 };
 
-export { initLangSwitch };
+export default initLangSwitch;

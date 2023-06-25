@@ -15,4 +15,4 @@ function updateTranslations() {
   });
 }
 
-export { updateTranslations };
+export default updateTranslations;

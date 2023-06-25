@@ -41,4 +41,4 @@ const initThemeSwitch = () => {
   themeCheck();
 };
 
-export { initThemeSwitch };
+export default initThemeSwitch;

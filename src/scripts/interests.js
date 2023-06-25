@@ -12,7 +12,7 @@ function interestCount() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   interestCount();
 });
 
@@ -28,7 +28,7 @@ function addInterest(e) {
       interest.innerHTML = `<span>${interestsInput.value}</span> <span id="removeInterest" class="fa-solid fa-xmark text-red-400 dark:text-red-600 cursor-pointer"></span>`;
       interestList.appendChild(interest);
       interestsInput.value = "";
-      interestCounter--;
+      interestCounter -= 1;
       interestRemaining.textContent = i18next.t("interestRemaining", {
         count: interestCounter,
       });
@@ -45,7 +45,7 @@ function removeInterest(e) {
       interests.splice(removedIndex, 1);
     }
     removedInterestDiv.remove();
-    interestCounter++;
+    interestCounter += 1;
     interestRemaining.textContent = i18next.t("interestRemaining", {
       count: interestCounter,
     });

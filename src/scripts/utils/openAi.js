@@ -20,4 +20,4 @@ async function openAi(prompt) {
   return data;
 }
 
-export { openAi };
+export default openAi;

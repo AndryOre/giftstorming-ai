@@ -1,6 +1,6 @@
 import i18next from "i18next";
-import { updateTranslations } from "./utils/translations";
 import LanguageDetector from "i18next-browser-languagedetector";
+import updateTranslations from "./utils/translations";
 import enTranslations from "../locales/en/translation.json";
 import esTranslations from "../locales/es/translation.json";
 
