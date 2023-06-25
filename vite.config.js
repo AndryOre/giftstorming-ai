@@ -6,4 +6,8 @@ export default defineConfig({
   build: {
     outDir: "../dist",
   },
+  server: {
+    host: true,
+    open: true,
+  },
 });
